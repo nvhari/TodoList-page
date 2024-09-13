@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Login Page -->
+    <div class="container" id="login-page">
+        <div class="box"></div>
+        <h2>Login</h2>
+        <div id="error"></div>
+        <form id="login-form">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <button class="button-62" type="submit">Login</button>
+        </form>
+    </div>
+    </div>
+
+
+    <!-- Todo List Page -->
+    <div id="todolist-page" style="display:none;">
+        <h2>Todo List</h2>
+        <button id="todolist-btn">Get Todo List</button>
+        <button id="logout-btn">Log Out</button>
+        <p id="completed-message" style="color:green;"></p>
+        <table id="todolist-table" style="display:none;">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Completed</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
